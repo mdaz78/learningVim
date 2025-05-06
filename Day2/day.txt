@@ -1,0 +1,14 @@
+Hello, this is Day 2 of my Vim journey.
+
+Today, I will practice:
+- Entering Insert Mode
+- Deleting text in various ways
+- Undoing and redoing changes
+
+Let's try some basic delete commands now:
+1. This is a sample line to delete the first character.
+2. Here is a word that I might delete using dw.
+3. Here's a whole line that I will delete using dd.
+4. I will delete text until the end of this line using D.
+
+Undo the changes and redo them to see the changes.
