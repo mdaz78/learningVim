@@ -1,0 +1,15 @@
+This is Day 4 of Vim mastery.
+
+You'll learn:
+- How to yank lines and words
+- How to paste them in different locations
+- How to yank lines and words
+- How to paste them in different locations
+- How to paste them in different locations
+- How to change change words and lines efficiently
+
+words and lines updatedWord
+
+Try yanking and pasting parts of this text.
+Then use 'cw' or 'cc' to modify it.
+Also try using visual mode with 'v' to yank selected text.
