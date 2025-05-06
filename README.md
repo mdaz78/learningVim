@@ -31,10 +31,10 @@ This repository tracks my daily exercises, drills, configs, and reflections as I
 
 ```bash
 .
-├── Day1/                 # Day 1 learning materials
+├── Day01/                 # Day 1 learning materials
 │   ├── day.txt          # Day 1 practice file
 │   └── notes.md         # Day 1 specific notes
-├── Day2/                 # Day 2 learning materials
+├── Day02/                 # Day 2 learning materials
 │   ├── day.txt          # Day 2 practice file
 │   └── notes.md         # Day 2 specific notes
 ├── lua/                 # LazyVim plugin and LSP config
@@ -49,15 +49,15 @@ This repository tracks my daily exercises, drills, configs, and reflections as I
 
 | Day | Focus                                    | File            | Notes            |
 | --- | ---------------------------------------- | --------------- | ---------------- |
-| 1   | Modes, Movement, Save/Quit               | `Day1/day.txt`  | `Day1/notes.md`  |
-| 2   | Insert mode, Delete, Undo/Redo           | `Day2/day.txt`  | `Day2/notes.md`  |
-| 3   | Yank, Paste, Registers                   | `Day3/day.txt`  | `Day3/notes.md`  |
-| 4   | Word motions: w, e, b                    | `Day4/day.txt`  | `Day4/notes.md`  |
-| 5   | Searching with / and ?                   | `Day5/day.txt`  | `Day5/notes.md`  |
-| 6   | Replace, Substitute, r, s, :%s           | `Day6/day.txt`  | `Day6/notes.md`  |
-| 7   | Visual mode: v, V, Ctrl-v                | `Day7/day.txt`  | `Day7/notes.md`  |
-| 8   | Copy/paste with system clipboard         | `Day8/day.txt`  | `Day8/notes.md`  |
-| 9   | Marks, Jumps, and Navigating large files | `Day9/day.txt`  | `Day9/notes.md`  |
+| 1   | Modes, Movement, Save/Quit               | `Day01/day.txt` | `Day01/notes.md` |
+| 2   | Insert mode, Delete, Undo/Redo           | `Day02/day.txt` | `Day02/notes.md` |
+| 3   | Yank, Paste, Registers                   | `Day03/day.txt` | `Day03/notes.md` |
+| 4   | Word motions: w, e, b                    | `Day04/day.txt` | `Day04/notes.md` |
+| 5   | Searching with / and ?                   | `Day05/day.txt` | `Day05/notes.md` |
+| 6   | Replace, Substitute, r, s, :%s           | `Day06/day.txt` | `Day06/notes.md` |
+| 7   | Visual mode: v, V, Ctrl-v                | `Day07/day.txt` | `Day07/notes.md` |
+| 8   | Copy/paste with system clipboard         | `Day08/day.txt` | `Day08/notes.md` |
+| 9   | Marks, Jumps, and Navigating large files | `Day09/day.txt` | `Day09/notes.md` |
 | 10  | Buffers and windows basics               | `Day10/day.txt` | `Day10/notes.md` |
 | 11  | Tabs vs Buffers: use `:tab`              | `Day11/day.txt` | `Day11/notes.md` |
 | 12  | File Explorer (netrw/tree)               | `Day12/day.txt` | `Day12/notes.md` |
