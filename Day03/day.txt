@@ -1,0 +1,11 @@
+This is your Day 3 practice file for Vim.
+
+You're going to practice navigating:
+- by words using w, e, b, ge
+- to the start and end of lines using 0, ^, $
+
+You'll also search this file using / and ?
+
+Let's try searching for the word 'search' and 'line'.
+
+Try using 'n' and 'N' to repeat searches in both directions.
