@@ -1,0 +1,36 @@
+This is Day 5 of Vim practice.
+
+Today you'll practice:
+- Searching for text
+- Navigating with search and commands
+- Using substitution to replace text
+
+Practice Text Below:
+
+The quick yellow fox jumps over the lazy dog.
+The quick blue fox jumps over the lazy cat.
+The swift red fox jumps over the lazy dog.
+The quick red fox jumps over the sleepy dog.
+The quick yellow fox runs past the lazy dog.
+
+Colors to replace: red, blue, green, yellow, red, blue, red
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore et dolore.
+Ut enim ad minim veniam, quis nostrud exercitation.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Duis aute irure dolor in reprehenderit in voluptate.
+
+Words to find: dolor, Lorem, tempor, dolor, Lorem
+
+Navigation Practice:
+Line 1 - Try reaching here with gg
+Line 2 - Practice H (high)
+Line 3 - Practice M (middle)
+Line 4 - Practice L (low)
+Line 5 - Try reaching here with G
+
+Try using the search commands to find text, then navigate using G, gg, and H, M, L.
+Also try using substitution to replace text, using :s and :%s.
+
+Have fun exploring Vim's navigation power!
