@@ -1,0 +1,20 @@
+The quik brown fox jumps over the lazy dog.
+This line has an extraa space.
+Replace this wrd with another.
+hello world I am a line of text
+This sentance needs correction.
+of "color" should be changed to "colour".
+The item code is ITEM123, but it should be ITEM456.
+Can you fix all the misteaks in this file?
+Another example: the product_id is P_001, change it to P_002.
+The word "teh" appears multiple times, teh quick brown fox.
+Change all "teh" to "the".
+
+ITEM123
+
+Another example: the is P_001, change it to P_002.
+product_id
+
+
+ITEM123
+Another example: the is P_001, change it to P_002.
