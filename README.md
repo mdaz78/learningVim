@@ -41,6 +41,7 @@ This repository tracks my daily exercises, drills, configs, and reflections as I
 │   └── plugins/
 │       └── lang-setup.lua
 └── README.md
+└── cheat-sheet.md
 ```
 
 ---
@@ -89,12 +90,9 @@ By Day 30, I will be able to:
 - Work mouse-free
 - Edit and navigate codebases with superhuman speed
 - Use Neovim as a full IDE for my stack
-
----
-
-## 📌 Started: May 6, 2025
-
-Let’s get good.
+- Master advanced Vim features like macros, registers, and text objects
+- Efficiently manage multiple files and projects
+- Integrate with modern development tools and workflows
 
 ---
 
