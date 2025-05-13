@@ -93,9 +93,3 @@ By Day 30, I will be able to:
 - Master advanced Vim features like macros, registers, and text objects
 - Efficiently manage multiple files and projects
 - Integrate with modern development tools and workflows
-
----
-
-## 📷 Screenshots / Demos
-
-(TBD)
