@@ -1,0 +1,62 @@
+# Day 24: Terminal Usage in Neovim
+
+# Exercise 1: Basic Terminal Commands
+Practice these terminal operations:
+1. :terminal (open terminal)
+2. :vertical terminal (split vertical)
+3. :horizontal terminal (split horizontal)
+
+Try these commands in terminal:
+$ ls -la
+$ pwd
+$ echo $PATH
+$ ps aux | grep vim
+
+# Exercise 2: Terminal Navigation
+Practice terminal mode switches:
+1. Ctrl-\ Ctrl-n (normal mode)
+2. i or a (terminal mode)
+3. Ctrl-w w (switch windows)
+4. Ctrl-w c (close terminal)
+
+Sample workflow:
+1. Edit code
+2. Run tests in terminal
+3. Switch back to code
+4. Repeat
+
+# Exercise 3: Multiple Terminals
+Practice managing multiple terms:
+1. :term zsh (shell terminal)
+2. :term node (node REPL)
+3. :term python3 (python REPL)
+
+Terminal layouts:
++-------------+-------------+
+|    Code     |   Shell    |
+|             |            |
++-------------+-------------+
+|    Tests    |    Logs    |
+|             |            |
++-------------+-------------+
+
+# Exercise 4: Terminal Integration
+Try these workflows:
+1. Run file in terminal:
+   :term node %
+   :term python3 %
+
+2. Run tests:
+   :term npm test
+   :term python -m pytest
+
+3. Git operations:
+   :term git status
+   :term git log
+
+Remember:
+- :term : open terminal
+- :bd! : force close terminal
+- Ctrl-\ Ctrl-n : exit terminal mode
+- Ctrl-w N : terminal normal mode
+- :terminal {cmd} : run command

@@ -1,0 +1,64 @@
+# Day 26: tmux + Vim Integration
+
+# Exercise 1: Basic tmux Commands
+Try these tmux commands:
+1. tmux new -s vim-session
+2. tmux ls (list sessions)
+3. tmux attach -t vim-session
+4. Prefix + c (new window)
+5. Prefix + % (split vertical)
+6. Prefix + " (split horizontal)
+
+# Exercise 2: Vim-tmux Navigation
+Practice seamless navigation:
+1. Ctrl-h (left pane)
+2. Ctrl-j (down pane)
+3. Ctrl-k (up pane)
+4. Ctrl-l (right pane)
+
+Layout example:
++----------------+----------------+
+|                |                |
+|      Vim       |    Terminal    |
+|                |                |
++----------------+----------------+
+|                |                |
+|      Tests     |      Logs      |
+|                |                |
++----------------+----------------+
+
+# Exercise 3: Copy-Paste Integration
+Practice these workflows:
+1. Vim to tmux copy:
+   - Visual select in Vim
+   - Yank to system clipboard
+   - Paste in tmux
+
+2. tmux to Vim copy:
+   - Enter copy mode (Prefix + [)
+   - Select text
+   - Copy to buffer (Enter)
+   - Paste in Vim
+
+# Exercise 4: Advanced Integration
+Try these features:
+1. Send commands to pane
+2. Run tests in split
+3. View git status
+4. Monitor logs
+
+Example tmux.conf:
+```conf
+# Smart pane switching
+bind -n C-h select-pane -L
+bind -n C-j select-pane -D
+bind -n C-k select-pane -U
+bind -n C-l select-pane -R
+```
+
+Remember:
+- Prefix is Ctrl-b by default
+- :set -g mouse on : enable mouse
+- :source-file ~/.tmux.conf : reload config
+- Prefix + d : detach session
+- tmux kill-session -t name

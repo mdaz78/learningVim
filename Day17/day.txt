@@ -1,0 +1,59 @@
+# Day 17: Git Integration Practice
+
+# Exercise 1: Fugitive Basics
+Practice these commands:
+1. :G or :Git (status window)
+   - navigate with j/k
+   - stage/unstage with s
+   - commit with cc
+   - push with P
+
+2. :Git blame
+   - view commit info
+   - navigate blame history
+
+# Exercise 2: Gitsigns
+Practice with these changes:
+
+// Added line
+console.log("New debug message");
+
+// Modified line
+const config = {
+    port: 4000,  // changed from 3000
+    debug: true  // changed from false
+};
+
+// Deleted line (was: const timeout = 5000;)
+
+Use:
+1. ]c - next change
+2. [c - previous change
+3. ,hs - stage hunk
+4. ,hr - reset hunk
+5. ,hp - preview hunk
+
+# Exercise 3: Git Operations
+Try these commands:
+1. :Git diff
+2. :Git log
+3. :Git merge
+4. :Git rebase -i
+5. :Git push
+6. :Git pull
+
+# Exercise 4: Advanced Fugitive
+Practice:
+1. :Git browse (open in browser)
+2. :Git blame
+3. :Gclog (commit history)
+4. :Git stash
+5. :Git checkout -b feature
+
+Remember:
+- :G : open git status
+- :Git [cmd] : run git command
+- :Gclog : commit history
+- ]c/[c : next/prev change
+- ,hs : stage hunk
+- ,hu : undo change

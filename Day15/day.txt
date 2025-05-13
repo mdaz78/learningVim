@@ -1,0 +1,49 @@
+# Day 15: LSP Basics Practice
+
+# Exercise 1: Go-to Commands
+Practice on this code:
+
+function calculateTotal(items) {
+    return items.reduce((sum, item) => sum + item.price, 0);
+}
+
+const shoppingCart = {
+    items: [],
+    addItem(item) {
+        this.items.push(item);
+    }
+};
+
+Try these commands:
+1. gd - go to definition
+2. gr - go to references
+3. gi - go to implementation
+4. gy - go to type definition
+
+# Exercise 2: Documentation
+Hover over these symbols (:K or gh):
+1. Array.prototype.reduce
+2. console.log
+3. Promise
+4. Map
+
+# Exercise 3: Code Actions
+Fix these issues with code actions (,ca):
+1. const unused_variable = 42;
+2. const [fist, second] = array; // typo
+3. console.log("Debug statement");
+
+# Exercise 4: Formatting
+Format this code (:Format):
+const messy={foo:   'bar',
+    baz:      42,
+        qux: true};
+
+Remember:
+- K or gh : hover documentation
+- gd : go to definition
+- gr : go to references
+- ,ca : code actions
+- :Format : format document
+- ]d : next diagnostic
+- [d : previous diagnostic

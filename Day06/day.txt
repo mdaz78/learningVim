@@ -1,20 +1,31 @@
-The quik brown fox jumps over the lazy dog.
-This line has an extraa space.
-Replace this wrd with another.
-hello world I am a line of text
-This sentance needs correction.
-of "color" should be changed to "colour".
-The item code is ITEM123, but it should be ITEM456.
-Can you fix all the misteaks in this file?
-Another example: the product_id is P_001, change it to P_002.
-The word "teh" appears multiple times, teh quick brown fox.
-Change all "teh" to "the".
+# Day 6: Replace and Substitute Practice
 
-ITEM123
+# Exercise 1: Single Character Replace (r)
+Fix these typos with 'r' command:
+1. The quik brown fox (fix 'k' to 'c')
+2. This sentance needs fixing (fix 'a' to 'e')
+3. Can you fix these misteaks? (fix 'a' to 'k')
 
-Another example: the is P_001, change it to P_002.
-product_id
+# Exercise 2: Basic Substitution (:s)
+Use :s command to fix these:
+1. teh quick brown fox
+2. this iz a test
+3. helo world
 
+# Exercise 3: Global Substitution (:%s)
+Replace all occurrences:
+1. colour -> color (American spelling)
+2. ITEM123 -> ITEM456 (all instances)
+3. P_001 -> P_002 (all instances)
 
-ITEM123
-Another example: the is P_001, change it to P_002.
+# Exercise 4: Advanced Substitution
+Practice with these:
+1. Fix double spaces:  see  the  spaces
+2. Format dates: 2023/05/13 -> 13-05-2023
+3. Capitalize names: john smith -> John Smith
+
+Remember:
+- r : replace single character
+- :s/old/new/ : replace first occurrence in line
+- :%s/old/new/g : replace all occurrences
+- :%s/old/new/gc : replace with confirmation

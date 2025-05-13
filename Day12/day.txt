@@ -1,0 +1,41 @@
+# Day 12: File Explorer Practice (netrw/tree)
+
+# Exercise 1: Basic netrw Navigation
+Open directory with :Ex
+- Navigate up/down with j/k
+- Enter directory with Enter
+- Go up directory with -
+- Create new file with %
+- Create new directory with d
+- Mark files with mf
+- Execute commands on marked files with mx
+
+# Exercise 2: Split Views
+Practice these commands:
+1. :Vex (vertical split explorer)
+2. :Sex (horizontal split explorer)
+3. :Lex (left explorer)
+
+# Exercise 3: File Operations
+Try these in netrw:
+1. Rename file (R)
+2. Delete file (D)
+3. Copy marked files (mc)
+4. Move marked files (mm)
+
+# Exercise 4: Tree View
+If using nvim-tree:
+1. Toggle tree (:NvimTreeToggle)
+2. Find file (:NvimTreeFindFile)
+3. Collapse all (:NvimTreeCollapse)
+4. Refresh (:NvimTreeRefresh)
+
+Remember:
+- :Ex : open explorer
+- :Vex : vertical split explorer
+- :Sex : horizontal split explorer
+- :Lex : left explorer
+- % : create new file
+- d : create new directory
+- D : delete file/directory
+- R : rename file/directory

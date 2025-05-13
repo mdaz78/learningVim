@@ -1,0 +1,50 @@
+# Day 13: Telescope Finder Practice
+
+# Exercise 1: Basic File Finding
+Try these Telescope commands:
+1. :Telescope find_files
+   - Type 'config' to find configuration files
+   - Use Ctrl-n/p to navigate results
+   - Press Enter to select
+
+2. :Telescope live_grep
+   - Search for 'function'
+   - Search for 'TODO'
+   - Try regex patterns
+
+# Exercise 2: Buffer and Help Navigation
+1. :Telescope buffers
+   - List all open buffers
+   - Preview buffer contents
+   - Delete buffers with <C-d>
+
+2. :Telescope help_tags
+   - Search for 'substitute'
+   - Search for 'navigation'
+   - Browse through Vim help
+
+# Exercise 3: Git Integration
+1. :Telescope git_files
+   - Browse git tracked files
+   - Preview changes
+
+2. :Telescope git_commits
+   - Browse commit history
+   - Preview changes in commits
+
+# Exercise 4: Advanced Features
+1. :Telescope treesitter
+   - Browse code symbols
+   - Navigate to functions
+
+2. :Telescope lsp_references
+   - Find all references
+   - Navigate between uses
+
+Remember:
+- Ctrl-n/p : next/previous item
+- Ctrl-d : delete buffer
+- Ctrl-x : horizontal split
+- Ctrl-v : vertical split
+- Ctrl-t : open in new tab
+- <ESC> : close telescope

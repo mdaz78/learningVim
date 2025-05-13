@@ -1,0 +1,67 @@
+# Day 23: Advanced Search Techniques
+
+# Exercise 1: Vimgrep Search
+Search these files with :vimgrep:
+
+File1.js:
+function getData() {
+    return fetch('/api/data');
+}
+
+File2.js:
+async function fetchData() {
+    const data = await getData();
+    return data;
+}
+
+File3.js:
+function processData(data) {
+    return data.map(item => item.id);
+}
+
+Try:
+:vimgrep /data/ **/*.js
+:vimgrep /function/ **/*.js
+
+# Exercise 2: Quickfix Navigation
+After vimgrep, practice:
+- :cn (next match)
+- :cp (previous match)
+- :cc (current match)
+- :copen (open quickfix)
+- :cclose (close quickfix)
+
+# Exercise 3: Advanced Patterns
+Find these patterns:
+
+1. Camel case: myVariableName
+2. Snake case: my_variable_name
+3. Email: user@example.com
+4. URL: https://example.com
+5. IP: 192.168.1.1
+6. Date: 2023-05-13
+
+Using:
+- /\v (very magic)
+- /\c (case insensitive)
+- /\< \> (word boundaries)
+
+# Exercise 4: Search and Replace
+Complex substitutions:
+
+1. Swap parameters:
+function(a, b) → function(b, a)
+
+2. Format dates:
+2023/05/13 → 13-05-2023
+
+3. Convert style:
+background-color → backgroundColor
+
+Remember:
+- :vimgrep : search in files
+- :grep : external grep
+- :lgrep : location list grep
+- :Rg : ripgrep (if installed)
+- :cwindow : open quickfix
+- :lwindow : open location list

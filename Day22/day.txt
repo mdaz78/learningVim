@@ -1,0 +1,76 @@
+# Day 22: Code Folding Practice
+
+# Exercise 1: Manual Folding
+Select these blocks and fold (zf):
+
+Section 1 {
+    Subsection 1.1 {
+        Content here
+        More content
+        Even more
+    }
+
+    Subsection 1.2 {
+        Another block
+        Of content
+        To practice with
+    }
+}
+
+# Exercise 2: Fold Navigation
+Practice with this nested structure:
+
+Class Example {
+    Method 1 {
+        Line 1
+        Line 2
+        Line 3
+    }
+
+    Method 2 {
+        Line 1
+        Line 2
+        Line 3
+    }
+
+    Method 3 {
+        Line 1
+        Line 2
+        Line 3
+    }
+}
+
+Commands to try:
+- zc (close fold)
+- zo (open fold)
+- za (toggle fold)
+- zR (open all folds)
+- zM (close all folds)
+
+# Exercise 3: Fold Methods
+Try different fold methods:
+1. manual (fdm=manual)
+2. indent (fdm=indent)
+3. syntax (fdm=syntax)
+4. marker (fdm=marker)
+
+# Exercise 4: Fold Markers
+Practice with markers: {{{1 }}}
+
+Section A {{{1
+    Content A
+    More A
+}}}1
+
+Section B {{{1
+    Content B
+    More B
+}}}1
+
+Remember:
+- zf : create fold
+- zd : delete fold
+- zE : eliminate all folds
+- zm : fold more
+- zr : fold less
+- zi : toggle folding

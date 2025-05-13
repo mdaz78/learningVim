@@ -1,0 +1,74 @@
+# Day 30: Review and Final Challenge
+
+# Exercise 1: Speed Tests
+Time yourself completing these tasks:
+
+1. Text Manipulation:
+   - Delete 3 words (3dw)
+   - Change inside parentheses (ci()
+   - Yank entire paragraph (yap)
+   - Replace all instances of 'old' with 'new'
+
+2. Navigation:
+   - Jump to line 42 (42G)
+   - Find next occurrence of 'function' (/function)
+   - Move to matching brace (%)
+   - Jump between functions (]])[[(
+
+# Exercise 2: Custom Dashboard
+Configure dashboard in init.lua:
+```lua
+require('dashboard').setup {
+    theme = 'doom',
+    config = {
+        header = {
+            "Welcome to Neovim",
+            "Mastered in 30 Days"
+        },
+        center = {
+            {
+                icon = ' ',
+                desc = 'Find File           ',
+                key = 'f',
+                action = 'Telescope find_files'
+            },
+            {
+                icon = ' ',
+                desc = 'Recent Files        ',
+                key = 'r',
+                action = 'Telescope oldfiles'
+            }
+        }
+    }
+}
+```
+
+# Exercise 3: Workflow Challenge
+Complete this workflow under 2 minutes:
+1. Open project
+2. Find file 'utils.ts'
+3. Extract function to new file
+4. Run tests
+5. Stage and commit changes
+
+# Exercise 4: Vim Golf Challenge
+Optimize these edits:
+1. Convert:
+   hello_world -> HelloWorld
+
+2. Wrap in try/catch:
+   someFunction();
+
+3. Sort lines:
+   banana
+   apple
+   cherry
+
+Remember what you've learned:
+- Efficient navigation
+- Text manipulation
+- Plugin integration
+- Git workflow
+- LSP features
+- Terminal usage
+- Custom configurations

@@ -1,0 +1,54 @@
+# Day 14: LazyVim and Treesitter Practice
+
+# Exercise 1: LazyVim Plugin Management
+1. Check plugin status:
+:Lazy
+
+2. Plugin commands:
+- Install new plugins
+- Update existing plugins
+- Clean unused plugins
+- Profile plugin load times
+
+# Exercise 2: Basic Treesitter
+Sample code for syntax highlighting:
+
+```javascript
+function example() {
+    const items = [1, 2, 3];
+    items.forEach(item => {
+        console.log(`Processing ${item}`);
+    });
+    return items.map(x => x * 2);
+}
+```
+
+```python
+def calculate(a, b):
+    """Docstring for demonstration"""
+    result = a + b
+    return result
+
+class Example:
+    def __init__(self):
+        self.value = 42
+```
+
+# Exercise 3: Treesitter Navigation
+Practice these movements:
+- ]m : next function
+- [m : previous function
+- ]] : next class
+- [[ : previous class
+
+# Exercise 4: Treesitter Selection
+Try incremental selection:
+1. Enter visual mode (v)
+2. Increment selection (Enter)
+3. Decrement selection (Backspace)
+
+Remember:
+- :TSInstall : install language parser
+- :TSModuleInfo : view module info
+- :TSHighlightCapturesUnderCursor : debug highlight
+- :TSPlaygroundToggle : explore syntax tree

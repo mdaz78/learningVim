@@ -1,0 +1,69 @@
+# Day 19: Macros and Command Repetition
+
+# Exercise 1: Basic Macro Recording
+Record a macro to format these lines (qa to start, q to end):
+
+apple
+banana
+cherry
+date
+elderberry
+
+Format needed:
+- capitalize first letter
+- add a dash prefix
+- add a period at the end
+
+Expected result:
+- Apple.
+- Banana.
+- Cherry.
+- Date.
+- Elderberry.
+
+# Exercise 2: Macro with Counters
+Convert these numbers to hex (record macro):
+
+decimal: 255
+decimal: 128
+decimal: 64
+decimal: 32
+decimal: 16
+
+Should become:
+hex: 0xFF
+hex: 0x80
+hex: 0x40
+hex: 0x20
+hex: 0x10
+
+# Exercise 3: Complex Macros
+Format these function calls:
+
+console.log("Hello")
+console.log("World")
+console.log("Test")
+
+Into:
+try {
+    console.log("Hello");
+} catch (error) {
+    handleError(error);
+}
+
+# Exercise 4: Repeat Last Change
+Practice with dot command (.):
+1. Change "old" to "new"
+old old old old
+2. Add semicolon at line end
+line1
+line2
+line3
+
+Remember:
+- q{register} : start recording
+- q : stop recording
+- @{register} : play macro
+- @@ : repeat last macro
+- . : repeat last change
+- N@a : run macro 'a' N times

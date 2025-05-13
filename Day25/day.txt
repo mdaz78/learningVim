@@ -1,0 +1,70 @@
+# Day 25: Debugging with DAP
+
+# Exercise 1: Basic Debug Setup
+Sample JavaScript code to debug:
+
+```javascript
+function calculateTotal(items) {
+    let total = 0;
+    for (const item of items) {
+        total += item.price;
+    }
+    return total;
+}
+
+const cart = [
+    { id: 1, price: 10 },
+    { id: 2, price: 20 },
+    { id: 3, price: 30 }
+];
+
+console.log(calculateTotal(cart));
+```
+
+Practice:
+1. Set breakpoint (DapToggleBreakpoint)
+2. Start debugging (DapContinue)
+3. Step over (DapStepOver)
+4. Step into (DapStepInto)
+
+# Exercise 2: Debug UI Elements
+Learn these UI components:
+1. Breakpoints window
+2. Variables window
+3. Watch window
+4. Call stack
+5. REPL
+
+Try adding watches:
+- cart.length
+- total
+- item.price
+
+# Exercise 3: Conditional Breakpoints
+Add conditions to break:
+1. When total > 50
+2. When item.id === 2
+3. On exception throw
+
+# Exercise 4: Launch Configurations
+Sample launch.json:
+```json
+{
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Current File",
+            "program": "${file}"
+        }
+    ]
+}
+```
+
+Remember:
+- <leader>db : toggle breakpoint
+- <leader>dc : continue
+- <leader>dso : step over
+- <leader>dsi : step into
+- <leader>dK : eval under cursor
+- :DapToggleRepl : toggle debug REPL

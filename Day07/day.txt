@@ -1,19 +1,39 @@
+# Day 7: Visual Mode Practice
+
+# Exercise 1: Character-wise Visual Mode (v)
+Some code to practice with:
 function greet() {
-  console.log("Hello, World!");
+    console.log("Hello, World!");  // Select this line with v
 }
 
+# Exercise 2: Line-wise Visual Mode (V)
+Select these function blocks:
 function add(a, b) {
-  return a + b;
+    return a + b;
 }
 
 function subtract(a, b) {
-  return a - b;
+    return a - b;
 }
 
-// TODO: Optimize this function
+# Exercise 3: Block-wise Visual Mode (Ctrl-v)
+Select and indent these lines:
+const data = [
+    { id: 1, name: "John" },
+    { id: 2, name: "Jane" },
+    { id: 3, name: "Bob" }
+];
+
+# Exercise 4: Multi-line Editing
+Use Ctrl-v to add // to these lines:
+console.log("Line 1");
+console.log("Line 2");
+console.log("Line 3");
+
+# Exercise 5: Combined Practice
+Edit this function using different visual modes:
 function multiply(a, b) {
-  return a * b;
+    // TODO: Add input validation
+    return a * b;
+    // TODO: Add error handling
 }
-
-// Use this space to practice setting marks, jumping with ' and `,
-// and exploring the :marks command.

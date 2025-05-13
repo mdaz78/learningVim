@@ -1,0 +1,48 @@
+# Day 18: Split Management Practice
+
+# Exercise 1: Basic Split Commands
+Practice these splits:
+1. :sp (horizontal split)
+2. :vsp (vertical split)
+3. :only (close other windows)
+
+# Exercise 2: Window Navigation
+Navigate between these sections using Ctrl-w + h,j,k,l:
+
++----------------+----------------+
+|                |                |
+|    Window 1    |    Window 2    |
+|                |                |
++----------------+----------------+
+|                |                |
+|    Window 3    |    Window 4    |
+|                |                |
++----------------+----------------+
+
+# Exercise 3: Window Resizing
+Practice these commands:
+1. Ctrl-w _ (maximize height)
+2. Ctrl-w | (maximize width)
+3. Ctrl-w = (equal size)
+4. Ctrl-w > (increase width)
+5. Ctrl-w < (decrease width)
+6. Ctrl-w + (increase height)
+7. Ctrl-w - (decrease height)
+
+# Exercise 4: Advanced Window Management
+Try these operations:
+1. Ctrl-w r (rotate windows)
+2. Ctrl-w x (exchange windows)
+3. Ctrl-w H (move window left)
+4. Ctrl-w J (move window down)
+5. Ctrl-w K (move window up)
+6. Ctrl-w L (move window right)
+
+Remember:
+- Ctrl-w s : horizontal split
+- Ctrl-w v : vertical split
+- Ctrl-w q : close window
+- Ctrl-w o : close other windows
+- Ctrl-w = : equal size
+- :resize N : set height to N
+- :vertical resize N : set width to N

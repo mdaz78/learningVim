@@ -1,0 +1,60 @@
+# Day 16: Advanced LSP Features
+
+# Exercise 1: Diagnostics Navigation
+Code with various issues:
+
+function processData(data) {
+    const result = data.processs(); // typo
+    console.log(unused_variable); // undefined
+    return resultt; // typo
+}
+
+Practice:
+1. ]d - next diagnostic
+2. [d - previous diagnostic
+3. gl - show diagnostic in float window
+
+# Exercise 2: Workspace Management
+1. List all symbols (:Telescope lsp_workspace_symbols)
+2. Find all references (:Telescope lsp_references)
+3. Show call hierarchy (:Telescope lsp_incoming_calls)
+4. Show type hierarchy (:Telescope lsp_type_definitions)
+
+# Exercise 3: Code Actions
+Complex refactoring:
+
+class UserService {
+    constructor(private readonly db: Database) {}
+
+    async getUser(id: string) {
+        return this.db.users.findOne(id);
+    }
+}
+
+Try:
+1. Extract method
+2. Change parameter type
+3. Generate interface
+4. Implement interface
+
+# Exercise 4: Rename Symbol
+Practice rename refactoring:
+
+const config = {
+    apiKey: "secret",
+    apiUrl: "http://api.example.com"
+};
+
+function callApi(apiKey, apiUrl) {
+    // rename apiKey to authToken
+    return fetch(apiUrl, { headers: { Authorization: apiKey }});
+}
+
+Remember:
+- :LspInfo : show LSP status
+- :LspRestart : restart LSP
+- :LspStop : stop LSP
+- ,rn : rename symbol
+- ,ca : code actions
+- ,wa : add workspace folder
+- ,wr : remove workspace folder

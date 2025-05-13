@@ -1,0 +1,46 @@
+# Day 9: Marks, Jumps, and Navigation Practice
+
+# Section 1: Working with Local Marks
+// Set mark 'a' here with ma
+function startHere() {
+    console.log("Start point");
+}
+
+// Set mark 'b' here with mb
+function middlePoint() {
+    console.log("Middle point");
+}
+
+// Set mark 'c' here with mc
+function endHere() {
+    console.log("End point");
+}
+
+# Section 2: File Navigation
+1. Top of file (gg)
+2. Bottom of file (G)
+3. Middle of file (50%)
+4. Go to line 42 (42G)
+
+# Section 3: Jump List Practice
+1. Search for "function" several times with /
+2. Move between functions
+3. Use Ctrl-O to jump back
+4. Use Ctrl-I to jump forward
+
+# Section 4: Advanced Navigation
+// Practice these commands:
+// H - High (top of screen)
+// M - Middle of screen
+// L - Low (bottom of screen)
+// zt - current line to top
+// zz - current line to center
+// zb - current line to bottom
+
+Remember:
+- ma : set mark a
+- 'a : jump to line with mark a
+- `a : jump to exact position of mark a
+- :marks : list all marks
+- Ctrl-O : jump back
+- Ctrl-I : jump forward

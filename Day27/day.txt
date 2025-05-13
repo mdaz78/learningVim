@@ -1,0 +1,85 @@
+# Day 27: Creating Your First Vim Plugin
+
+# Exercise 1: Basic Plugin Structure
+Create this structure:
+```
+~/.config/nvim/lua/my-plugin/
+├── init.lua
+├── utils.lua
+└── config.lua
+```
+
+Sample init.lua:
+```lua
+local M = {}
+
+M.setup = function(opts)
+    -- Plugin configuration
+    opts = opts or {}
+    vim.g.my_plugin_enabled = opts.enabled or true
+end
+
+return M
+```
+
+# Exercise 2: Plugin Functions
+Add utility functions in utils.lua:
+```lua
+local M = {}
+
+-- Word count function
+M.count_words = function()
+    local current_line = vim.api.nvim_get_current_line()
+    local count = 0
+    for word in current_line:gmatch("%S+") do
+        count = count + 1
+    end
+    print("Words in line: " .. count)
+end
+
+-- Time stamp function
+M.insert_timestamp = function()
+    local time = os.date("%Y-%m-%d %H:%M:%S")
+    local pos = vim.api.nvim_win_get_cursor(0)
+    vim.api.nvim_buf_set_text(0, pos[1]-1, pos[2], pos[1]-1, pos[2], {time})
+end
+
+return M
+```
+
+# Exercise 3: Plugin Commands
+Create commands in init.lua:
+```lua
+-- Create user commands
+vim.api.nvim_create_user_command("CountWords", function()
+    require("my-plugin.utils").count_words()
+end, {})
+
+vim.api.nvim_create_user_command("InsertTimestamp", function()
+    require("my-plugin.utils").insert_timestamp()
+end, {})
+```
+
+# Exercise 4: Plugin Keymaps
+Add keymaps in config.lua:
+```lua
+local M = {}
+
+M.setup_keymaps = function()
+    vim.keymap.set('n', '<leader>cw',
+        require("my-plugin.utils").count_words,
+        { desc = "Count words in line" })
+
+    vim.keymap.set('n', '<leader>ts',
+        require("my-plugin.utils").insert_timestamp,
+        { desc = "Insert timestamp" })
+end
+
+return M
+```
+
+Remember:
+- :h writing-plugin : plugin help
+- :lua require("my-plugin") : load plugin
+- :verbose map <leader>cw : check mapping
+- :h api : Neovim API docs

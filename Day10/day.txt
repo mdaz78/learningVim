@@ -1,0 +1,39 @@
+# Day 10: Buffer and Window Management
+
+# Buffer 1: Main Content
+This is the main buffer content.
+Practice switching between buffers using:
+- :ls (list buffers)
+- :b1, :b2, etc. (switch to buffer by number)
+- :bn (next buffer)
+- :bp (previous buffer)
+
+# Buffer 2: Configuration
+# Sample configuration file
+port = 3000
+host = "localhost"
+debug = true
+log_level = "info"
+
+# Buffer 3: Source Code
+function example() {
+    const greeting = "Hello";
+    const name = "World";
+    return `${greeting}, ${name}!`;
+}
+
+# Window Management Practice
+1. Split windows horizontally (:sp)
+2. Split windows vertically (:vsp)
+3. Navigate between windows (Ctrl-w + h,j,k,l)
+4. Resize windows (Ctrl-w + <,>,+,-)
+5. Close windows (:q)
+
+Remember:
+- :ls : list all buffers
+- :b name : switch to buffer by name
+- :bd : delete current buffer
+- Ctrl-w s : split horizontal
+- Ctrl-w v : split vertical
+- Ctrl-w c : close window
+- Ctrl-w o : close other windows

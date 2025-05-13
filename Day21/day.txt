@@ -1,0 +1,76 @@
+# Day 21: Vimscript and Lua Basics
+
+# Exercise 1: Basic Vimscript
+Try these commands:
+1. :echo "Hello World"
+2. :let name = "Vim"
+3. :echo "Hello, " . name
+
+Vimscript function:
+```vim
+function! Greet(name)
+    echo "Hello, " . a:name
+endfunction
+
+" Try: :call Greet("User")
+```
+
+# Exercise 2: Lua Basics
+Practice Lua in Neovim:
+```lua
+-- Variables
+local greeting = "Hello"
+local count = 42
+
+-- Functions
+local function say_hello(name)
+    print(string.format("%s, %s!", greeting, name))
+end
+
+-- Tables
+local config = {
+    theme = "dark",
+    line_numbers = true,
+    tab_width = 4
+}
+```
+
+# Exercise 3: Practical Config
+Common settings in both:
+
+Vimscript:
+```vim
+set number
+set relativenumber
+set expandtab
+set tabstop=4
+```
+
+Lua:
+```lua
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+```
+
+# Exercise 4: Keymaps
+Compare mapping styles:
+
+Vimscript:
+```vim
+nnoremap <leader>ff :Files<CR>
+vnoremap <leader>y "+y
+```
+
+Lua:
+```lua
+vim.keymap.set('n', '<leader>ff', ':Files<CR>')
+vim.keymap.set('v', '<leader>y', '"+y')
+```
+
+Remember:
+- :lua print("test") : run Lua code
+- :source % : source vimscript file
+- :lua require('file') : require Lua module
+- :h lua-vim : Lua API documentation

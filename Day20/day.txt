@@ -1,0 +1,44 @@
+# Day 20: Custom Keymaps and Leader Keys
+
+# Exercise 1: Leader Key Basics
+Default leader key is space, try these:
+1. <leader>ff (find files)
+2. <leader>fg (live grep)
+3. <leader>fb (buffers)
+4. <leader>fh (help tags)
+
+# Exercise 2: Common LazyVim Mappings
+Practice these default mappings:
+1. <leader>w- (split below)
+2. <leader>w| (split right)
+3. <leader>wd (delete window)
+4. <leader>gh (show git hunks)
+5. <leader>e (file explorer)
+
+# Exercise 3: Create Custom Mappings
+Add these to your config:
+```lua
+-- Toggle relative numbers
+vim.keymap.set('n', '<leader>rn', ':set relativenumber!<CR>')
+
+-- Clear search highlights
+vim.keymap.set('n', '<leader>nh', ':nohl<CR>')
+
+-- Save and source current file
+vim.keymap.set('n', '<leader>x', ':w<CR>:source %<CR>')
+```
+
+# Exercise 4: Mode-Specific Mappings
+Try different modes:
+1. Normal mode: <leader>cc (comment)
+2. Visual mode: <leader>cc (comment selection)
+3. Insert mode: jk (exit to normal mode)
+4. Command mode: <C-p>/<C-n> (history)
+
+Remember:
+- :nmap : list normal mode maps
+- :vmap : list visual mode maps
+- :imap : list insert mode maps
+- :verbose map {key} : show map source
+- :map : show all mappings
+- :Telescope keymaps : fuzzy find maps

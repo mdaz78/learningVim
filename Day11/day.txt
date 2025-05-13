@@ -1,0 +1,44 @@
+# Day 11: Understanding Tabs vs Buffers
+
+# Exercise 1: Tab Management
+1. Open this in new tab (:tabnew)
+2. Create another tab
+3. Navigate between tabs:
+   - gt (next tab)
+   - gT (previous tab)
+   - 2gt (go to tab 2)
+
+# Exercise 2: Buffer Management
+Buffer 1:
+function hello() {
+    return "Hello World";
+}
+
+Buffer 2:
+const config = {
+    port: 3000,
+    host: 'localhost'
+};
+
+Buffer 3:
+# Sample Data
+- Item 1
+- Item 2
+- Item 3
+
+# Exercise 3: Mixed Usage
+1. Open multiple buffers in tabs
+2. Split a tab to show multiple buffers
+3. Practice commands:
+   - :tabs (list tabs)
+   - :tabc (close tab)
+   - :tabo (close other tabs)
+   - :tabm 0 (move tab to start)
+
+Remember:
+- :tabnew : create new tab
+- :tabc : close current tab
+- :tabo : close other tabs
+- :tabm N : move tab to position N
+- :ls : list buffers
+- :b N : go to buffer N

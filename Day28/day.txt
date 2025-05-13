@@ -1,0 +1,83 @@
+# Day 28: VSCodeVim and IdeaVim Configuration
+
+# Exercise 1: VSCodeVim Setup
+settings.json configuration:
+```json
+{
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        }
+    ]
+}
+```
+
+# Exercise 2: IdeaVim Setup
+.ideavimrc configuration:
+```vim
+" Basic settings
+set scrolloff=5
+set incsearch
+set hlsearch
+set clipboard+=unnamed
+set number
+set relativenumber
+
+" Plugins
+set surround
+set multiple-cursors
+set commentary
+set easymotion
+
+" Key mappings
+let mapleader=" "
+map <leader>f <Action>(GotoFile)
+map <leader>g <Action>(FindInPath)
+map <leader>b <Action>(Switcher)
+```
+
+# Exercise 3: IDE-Specific Features
+VSCode commands:
+1. workbench.action.quickOpen
+2. editor.action.formatDocument
+3. editor.action.goToDefinition
+4. editor.action.rename
+
+IntelliJ actions:
+1. GotoFile
+2. FindInPath
+3. RenameElement
+4. ShowIntentionActions
+
+# Exercise 4: Workflow Integration
+Practice these workflows:
+
+VSCode:
+1. Find in files (<leader>g)
+2. Quick open (<leader>f)
+3. Toggle sidebar (<leader>b)
+4. Format document (<leader>F)
+
+IntelliJ:
+1. Navigate to class (<leader>c)
+2. Find usages (<leader>u)
+3. Quick fix (<leader>.)
+4. Refactor this (<leader>r)
+
+Remember:
+- :vscode command : run VSCode command
+- :action command : run IntelliJ action
+- :map : list mappings
+- :set : show settings

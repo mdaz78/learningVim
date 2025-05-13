@@ -1,0 +1,36 @@
+# Day 8: System Clipboard Integration Practice
+
+# Exercise 1: Copy to System Clipboard ("+y)
+1. Copy this line to system clipboard using "+y
+2. Copy this block using "+y{
+   Multiple lines
+   of text to
+   copy together
+}
+
+# Exercise 2: Paste from System Clipboard ("+p)
+1. Copy something from another application
+2. Paste it here: _____________
+3. Practice pasting before and after cursor with "+p and "+P
+
+# Exercise 3: Multiple Registers
+1. Copy this to "a register: First text
+2. Copy this to "b register: Second text
+3. Copy this to system clipboard: Third text
+4. Practice pasting from each:
+   - "ap (from register a)
+   - "bp (from register b)
+   - "+p (from system clipboard)
+
+# Exercise 4: Visual Mode with Clipboard
+1. Select this text in visual mode
+2. Copy to system clipboard with "+y
+3. Paste elsewhere
+4. Try with visual line and visual block modes
+
+Remember:
+- "+y : copy to system clipboard
+- "+p : paste from system clipboard
+- "ay : copy to register a
+- "ap : paste from register a
+- :reg : view register contents
